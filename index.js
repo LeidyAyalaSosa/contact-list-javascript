@@ -1,6 +1,6 @@
 // Crea una lista de contactos
 
-let contactos = [
+const contactos = [
   {
     id: 1,
     nombreCompleto: "Harry Edward Style Anne Cox",
@@ -88,7 +88,7 @@ console.log("Eliminado: ", eliminado);
 console.log(contactos); // No me muestra el elemento siguiente al eliminado
 
 const mercury = contactos.filter(function (elem) {
-  return elem.id === 2;
+  return elem.id === 4;
 });
 
 console.log(mercury);
