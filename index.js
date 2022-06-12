@@ -93,3 +93,13 @@ const mercury = contactos.filter(function (elem) {
 console.log(mercury);
 
 // No sé por qué no funciona con el id 4.
+
+const eliminados = contactos.splice(4, 1, {
+  id: 7,
+  nombreCompleto: "Aretha Louise Franklin",
+  celular: "3004329031",
+  correo: "ArethaFranklin.Respect@gmail.com",
+});
+
+console.log("Eliminado: ", eliminados);
+console.log(contactos);
