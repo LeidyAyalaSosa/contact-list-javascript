@@ -63,29 +63,28 @@ const contactos = [
   },
 ];
 
-// Crea una función para añadir un nuevo contacto
-
 window.alert("Añadir un nuevo contacto");
 
 const nuevoLengthPush = (contactos.push = {
-  id: 11,
+  id: window.prompt("Ingrese la posición en la que se encontrará el contacto"),
 
-  nombreCompleto: window.prompt("Ingrese el nombre completo"),
+  nombre: window.prompt("Ingrese sus nombres"),
+
+  apellido: window.prompt("Ingrese sus apellidos"),
 
   celular: window.prompt("Ingrese el número celular"),
 
-  correo: window.prompt("Ingrese el correo electrónico"), // Me gustaría saber si hay una manera de quitar ese "correo:" y que solo quede el "window.prompt."
+  ubicaciones: window.prompt("Ingrese su lugar y dirección de residencia"),
+
+  correo: window.prompt("Ingrese su dirección de correo electrónico"),
 });
 
-console.log(contactos),
-  // Crea una función para eliminar un contacto existente
+console.log(contactos), contactos.splice(3, 1);
 
-  contactos.splice(3, 1);
-
-const eliminado = contactos.splice(2, 1); //Me está eliminando dos en lugar de uno o...
+const eliminado = contactos.splice(2, 1);
 console.log("Eliminado: ", eliminado);
 
-console.log(contactos); // No me muestra el elemento siguiente al eliminado
+console.log(contactos);
 
 const mercury = contactos.filter(function (elem) {
   return elem.id === 4;
