@@ -79,7 +79,9 @@ const nuevoLengthPush = (contactos.push = {
   correo: window.prompt("Ingrese su dirección de correo electrónico"),
 });
 
-console.log(contactos), contactos.splice(3, 1);
+console.log(contactos); 
+ 
+contactos.splice(3, 1);
 
 const eliminado = contactos.splice(2, 1);
 console.log("Eliminado: ", eliminado);
