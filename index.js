@@ -65,7 +65,7 @@ const contactos = [
 
 window.alert("Añadir un nuevo contacto");
 
-const nuevoLengthPush = (contactos.push = {
+const nuevoLengthPush = (contactos.push ({
   id: window.prompt("Ingrese la posición en la que se encontrará el contacto"),
 
   nombre: window.prompt("Ingrese sus nombres"),
@@ -77,7 +77,7 @@ const nuevoLengthPush = (contactos.push = {
   ubicaciones: window.prompt("Ingrese su lugar y dirección de residencia"),
 
   correo: window.prompt("Ingrese su dirección de correo electrónico"),
-});
+}));
 
 console.log(contactos); 
  
