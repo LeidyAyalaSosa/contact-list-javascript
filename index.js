@@ -83,8 +83,8 @@ console.log(contactos);
  
 const nuevo = contactos.filter((contacto) => contacto.id !== 2);
 
-contactos.splice(4, 1, {
-  id: 7,
+contactos.splice(2, 1, {
+  id: 3,
   nombreCompleto: "Aretha Louise Franklin",
   celular: "3004329031",
   correo: "ArethaFranklin.Respect@gmail.com",
