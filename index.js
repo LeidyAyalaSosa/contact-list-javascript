@@ -81,27 +81,13 @@ const nuevoLengthPush = (contactos.push ({
 
 console.log(contactos); 
  
-contactos.splice(3, 1);
+const nuevo = contactos.filter((contacto) => contacto.id !== 2);
 
-const eliminado = contactos.splice(2, 1);
-console.log("Eliminado: ", eliminado);
-
-console.log(contactos);
-
-const mercury = contactos.filter(function (elem) {
-  return elem.id === 4;
-});
-
-console.log(mercury);
-
-// No sé por qué no funciona con el id 4.
-
-const eliminados = contactos.splice(4, 1, {
+contactos.splice(4, 1, {
   id: 7,
   nombreCompleto: "Aretha Louise Franklin",
   celular: "3004329031",
   correo: "ArethaFranklin.Respect@gmail.com",
 });
 
-console.log("Eliminado: ", eliminados);
 console.log(contactos);
